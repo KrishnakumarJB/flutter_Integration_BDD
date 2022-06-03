@@ -12,6 +12,12 @@ const Duration _minimalPumpDelay = Duration(milliseconds: 50);
 
 /// General utilities over Widget Tester for convenience and code reuse
 extension WidgetTesterUtils on WidgetTester {
+
+  /// Function for waiting
+  Future<void> wait(Duration duration) async {
+    await Future.delayed(duration);
+  }
+
   /// Function in order to pump() a certain time when it is impossible to use
   /// pumpAndSettle() or just pump()
   Future<void> pumpForDuration(Duration duration) async {
@@ -158,7 +164,7 @@ extension WidgetTesterUtils on WidgetTester {
     await pumpUntilVisibleAmount(finder, 1, timeout: timeout);
     try {
       await tap(finder);
-      await pumpAndSettle();
+      await pump();
     }
     // ignore: avoid_catching_errors
     on StateError catch (e) {
@@ -176,7 +182,7 @@ extension WidgetTesterUtils on WidgetTester {
     await pumpUntilVisible(finder, timeout: timeout);
     try {
       await enterText(finder, text);
-      await pumpAndSettle();
+      await pump();
     }
     // ignore: avoid_catching_errors
     on StateError catch (e) {
