@@ -1,0 +1,2 @@
+@all
+Feature: Login tests

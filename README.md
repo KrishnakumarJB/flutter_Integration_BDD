@@ -8,7 +8,7 @@
 **Command to regenerate after changing any feature file:**
 
 
-```flutter pub run build_runner clean && flutter pub run build_runner build --delete-conflicting-outputs```
+```flutter pub run build_runner clean && flutter pub run build_runner build --delete-conflicting-outputs --config integration_test```
 
 **Running tests:**
 
