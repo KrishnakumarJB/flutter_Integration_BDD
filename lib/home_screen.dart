@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
           title: const Text(
             'Home Screen',
             style: TextStyle(color: Colors.white),
+            key: Key("homeScreenTxt"),
           ),
           actions: [
             IconButton(

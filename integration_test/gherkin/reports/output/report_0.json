@@ -1,0 +1,170 @@
+[
+  {
+    "description": "",
+    "id": "login tests",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login tests",
+    "uri": "",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@all"
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "id": "login tests;login with invalid user credentials",
+        "name": "Login with invalid user credentials",
+        "description": "",
+        "line": 1,
+        "tags": [
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user navigates to login screen",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "enter invalid email in email field",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 399000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "enter invalid password in password field",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "press login button",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "verify user login failed",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1126000000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "id": "login tests;login with valid user credentials",
+        "name": "Login with valid user credentials",
+        "description": "",
+        "line": 1,
+        "tags": [
+          {
+            "line": 1,
+            "name": "@all"
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user navigates to login screen",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "enter email in email field",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "enter password in password field",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "press login button",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "verify user logged in successfully",
+            "line": 1,
+            "match": {
+              "location": ":1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 529000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

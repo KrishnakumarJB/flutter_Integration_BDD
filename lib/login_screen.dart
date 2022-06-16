@@ -44,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 keyboardType: TextInputType.emailAddress,
                 autofocus: false,
                 controller: emailController,
+                key: const Key("emailAddressFieldKey"),
                 decoration: InputDecoration(
                   hintText: 'Email',
                   contentPadding: const EdgeInsets.fromLTRB(
@@ -71,6 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 autofocus: false,
                 obscureText: true,
                 controller: passwordController,
+                key: const Key("passwordFieldKey"),
                 decoration: InputDecoration(
                   hintText: 'Password',
                   contentPadding:
@@ -92,6 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: ElevatedButton(
+                  key: const Key("loginButtonKey"),
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
                       if (emailController.text != testEmail) {
